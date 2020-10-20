@@ -1,0 +1,17 @@
+{
+    "name": "Football Website",
+    "gcm_sender_id": "564159684688",
+    "short_name": "Football Website",
+    "description": "Football Website",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00897B",
+    "theme_color": "#00897B",
+    "icons": [
+        {
+            "src": "/images/icon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
