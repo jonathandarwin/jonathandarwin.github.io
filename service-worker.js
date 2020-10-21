@@ -18,8 +18,7 @@ workbox.precaching.precacheAndRoute([
   { url: "/js/sw-register.js", revision: "1" },
   { url: "/js/api.js", revision: "1" },
   { url: "/js/db.js", revision: "1" },
-  { url: "/js/idb.js", revision: "1" },
-  { url: "/js/push.js", revision: "1" },
+  { url: "/js/idb.js", revision: "1" },  
   { url: "/js/util.js", revision: "1" },
   { url: "/service-worker.js", revision: "1" },
   { url: "/images/ic_bookmark_filled.svg", revision: "1" },
@@ -28,7 +27,9 @@ workbox.precaching.precacheAndRoute([
   { url: "/images/loader.gif", revision: "1" },
   { url: "/images/noaccess.png", revision: "1" },
   { url: "/images/notfound.png", revision: "1" },
-]);
+], {
+  ignoreUrlParametersMatching: [/.*/]
+});
 
 
 workbox.routing.registerRoute(
