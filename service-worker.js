@@ -27,7 +27,9 @@ workbox.precaching.precacheAndRoute([
   { url: "/images/loader.gif", revision: "1" },
   { url: "/images/noaccess.png", revision: "1" },
   { url: "/images/notfound.png", revision: "1" },
-]);
+], {
+  ignoreUrlParametersMatching: [/.*/]
+});
 
 
 workbox.routing.registerRoute(
